@@ -1,5 +1,16 @@
 ## API SALVA SEU ENDEREÇO NO BANCO DE DADOS.
++++++++++++++++
+
+- [x] PHP
+- [x] MYSQL
+- [x] APACHE
+
++++++++++++++++
+### DUMP ↓
+[BAIXAR DUMP]("https://drive.google.com/file/d/15dU8bp1AX622I6XVdY6WBVvRdM9vwhLV/view?usp=sharing")
+
 ## GET
+
 
 ```
 /api-php-cep/cep/read.php
