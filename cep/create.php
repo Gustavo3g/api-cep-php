@@ -3,7 +3,7 @@
 $headers = apache_request_headers();
 header("Access-Control-Allow-Origin: *");
 header("Content-Type: application/json; charset=UTF-8");
-//header("Access-Control-Allow-Methods: POST");
+header("Access-Control-Allow-Methods: POST");
 header("Access-Control-Max-Age: 3600");
 header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
 
@@ -20,7 +20,7 @@ $endereco = new Endereco($db);
 //echo "teste";
 $data = json_decode(file_get_contents("php://input"));
 // certificando que os dados não estão vazios
-if(!empty($data->cep) && $headers['Access-Control-Allow-Methods'] == 'POST'){
+if(!empty($data->cep)){
 
     $cep_ = $data->cep;
     $url = "http://viacep.com.br/ws/$cep_/json/";

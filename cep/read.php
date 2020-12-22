@@ -20,7 +20,7 @@ $enderecos = new Endereco($db);
 $stmt = $enderecos->read();
 $num = $stmt->rowCount();
 
-if($num > 0 && $headers['Access-Control-Allow-Methods'] == 'GET'){
+if($num > 0 ){
     $enderecos_arr = array();
     $enderecos_arr['registros'] = array();
 
