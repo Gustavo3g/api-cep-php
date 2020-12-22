@@ -1,10 +1,10 @@
-
 <?php
 // required headers
-$headers = apache_request_headers();
-
+//$headers = apache_request_headers();
+//
 header("Access-Control-Allow-Origin: *");
 header("Content-Type: application/json; charset=UTF-8");
+
 //a conexão do banco de dados estará aqui
 
 include_once '../config/database.php';
